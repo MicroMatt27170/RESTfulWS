@@ -16,6 +16,7 @@ import org.springframework.stereotype.Component;
 @Component
 // }
 public class ScheduledTasks {
+    //Permite programar tareas y ejecuta codigo periodicamente
 	private static final Logger logger = LogManager.getLogger();
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 

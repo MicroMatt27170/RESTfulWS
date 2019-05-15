@@ -13,6 +13,9 @@ import javax.servlet.ServletRegistration;
 import javax.servlet.FilterRegistration;
 import javax.servlet.MultipartConfigElement;
 
+/**
+ * Este código permite crear una instancia de la aplicación
+ */
 public class InitializeApp implements WebApplicationInitializer
 {
     @Override
@@ -61,6 +64,9 @@ public class InitializeApp implements WebApplicationInitializer
         restContext.register(RestServletContextConfig.class);
         DispatcherServlet servlet = new DispatcherServlet(restContext);
         servlet.setDispatchOptionsRequest(true);
+        /**
+         * Crea una instancia del servlet para que se ejecute en el servidor de apache tomcat
+         */
         dispatcher = container.addServlet("springRestDispatcher", servlet);
         dispatcher.setLoadOnStartup(2);
         dispatcher.addMapping("/api/v1/*");

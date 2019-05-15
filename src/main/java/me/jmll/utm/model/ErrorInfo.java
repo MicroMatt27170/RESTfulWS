@@ -2,6 +2,10 @@ package me.jmll.utm.model;
 
 import javax.xml.bind.annotation.XmlAttribute;
 
+/**
+ * Código de error en Java
+ * MicroMatt estuvo aquí XD
+ */
 public class ErrorInfo {
     private String href;
     private String message;

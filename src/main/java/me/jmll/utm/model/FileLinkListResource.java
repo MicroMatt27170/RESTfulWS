@@ -6,6 +6,9 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * Link para los recursos guardados en el servidor
+ */
 @XmlRootElement
 public class FileLinkListResource extends Resource {
 	private List<Link> links = new ArrayList<>();

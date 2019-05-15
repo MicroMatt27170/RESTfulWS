@@ -8,6 +8,9 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import org.springframework.http.HttpMethod;
 
+/**
+ * Opciones del documento a configurar
+ */
 @XmlRootElement
 public class OptionsDoc {
 	private Map<HttpMethod, String> methods = new Hashtable<>();

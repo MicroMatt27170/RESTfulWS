@@ -6,6 +6,10 @@ import java.util.UUID;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * Código para desplegar notificaciones en el servidor
+ * MicroMatt estuvo aqui
+ */
 @XmlRootElement
 public class Notification implements Serializable {
 	private static final long serialVersionUID = 1L;
